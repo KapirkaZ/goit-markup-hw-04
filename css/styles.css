@@ -494,7 +494,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-/* фоновые картинки */
+/* Оформительный контент */
 .item.description::before {
   display: block;
   content: "";
