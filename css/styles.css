@@ -591,7 +591,7 @@ img {
 
 /* социальные сети */
 
-.feature-list .item {
+.feature-list > .item {
   flex-basis: calc((100% - 3 * 30px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -611,6 +611,15 @@ img {
 .social-list .icon {
   width: 20px;
   height: 20px;
+  fill: var(--client-logo);
+}
+
+.social-list .link:hover .icon {
+  fill: var(--main-title-text-color);
+}
+
+.social-list .link:hover {
+  background-color: var(--accent-color);
 }
 
 .social-list .item:not(:last-child) {
@@ -620,4 +629,18 @@ img {
 .feature-list .social-list {
   margin-bottom: 30px;
   justify-content: center;
+}
+
+/* footer social */
+
+.footer-social .text {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-title-text-color);
+}
+
+.footer-social .link {
+  background-color: rgba(255, 255, 255, 0.1);
 }
