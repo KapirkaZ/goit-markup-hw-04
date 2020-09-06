@@ -6,6 +6,7 @@
   --button-color-secondary: #212121;
   --button-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+  --client-logo: #afb1b8;
 }
 
 body {
@@ -519,4 +520,71 @@ img {
 
 .icon-astronaut::before {
   background-image: url(../css/svg-icons/astronaut.svg);
+}
+
+.post {
+  display: inline-flex;
+  align-items: center;
+}
+.icon-e-mail {
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+.site-info .post:hover .icon-e-mail {
+  fill: var(--accent-color);
+}
+
+.telephon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.tel-number {
+  width: 10px;
+  height: 16px;
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+.site-info .telephon:hover .tel-number {
+  fill: var(--accent-color);
+}
+
+/* Наши клиенты */
+
+.clients-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list .link:hover,
+.clients-list .link:focus {
+  border-color: var(--accent-color);
+}
+
+.icon {
+  --color1: var(--client-logo);
+}
+
+.icon:hover {
+  --color2: var(--accent-color);
+  --color1: var(--accent-color);
+}
+
+.feature-list .item:not(:last-child),
+.examples-list .item:not(:last-child),
+.team-list .item:not(:last-child),
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list .item {
+  flex-basis: calc((100% - 5 * 30px) / 6);
 }
