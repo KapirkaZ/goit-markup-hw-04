@@ -7,6 +7,7 @@
   --button-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --client-logo: #afb1b8;
+  --border-color: #eeccee;
 }
 
 body {
@@ -58,6 +59,10 @@ ul {
 
 .page-header {
   background-color: #fff;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header .flexbox {
@@ -165,9 +170,13 @@ button {
 
 .hero {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   /* background-color: var(--footer-bg-color); */
-  padding-top: 200px;
-  padding-bottom: 200px;
+
   text-transform: uppercase;
 }
 
@@ -382,11 +391,11 @@ img {
   color: var(--accent-color);
 }
 
-.adres {
+.footer-address .adres {
   color: var(--main-title-text-color);
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.7px;
+  line-height: 21px;
   letter-spacing: 0.03em;
   font-style: normal;
 }
@@ -419,6 +428,9 @@ img {
   margin: 0;
 }
 
+.footer-address .adres {
+  margin: 0;
+}
 /* Portfolio */
 
 .portfolio-nav {
